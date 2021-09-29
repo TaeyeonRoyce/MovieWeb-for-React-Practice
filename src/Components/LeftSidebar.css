@@ -1,0 +1,70 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.sidebar__container {
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: 100%;
+}
+.profile__Box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: grey;
+  padding: 30px 20px 0px 20px;
+}
+.profile__circle__image {
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  margin-top: 30px;
+  box-shadow: 0px 10px 7px rgb(196, 191, 191);
+  margin-bottom: 15px;
+}
+
+.sidebar__firstSection {
+  display: flex;
+  flex-direction: column;
+}
+.sidebar__firstSection .menu {
+  color: grey;
+  font-size: 12px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  padding-left: 30px;
+}
+.sidebar__context {
+  display: flex;
+  align-items: center;
+  min-height: 30px;
+  font-size: 14px;
+  color: grey;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 26px;
+  cursor: pointer;
+}
+.sidebar__clicked {
+  color: black;
+  border-left: 3px solid rgb(92, 187, 211);
+}
+.sidebar__icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+}
+.activity__counts {
+  margin-left: 40px;
+  background-color: rgb(165, 161, 161);
+  width: 20px;
+  height: 14px;
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+  font-size: 10px;
+}

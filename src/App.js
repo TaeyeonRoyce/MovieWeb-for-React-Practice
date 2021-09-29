@@ -1,6 +1,9 @@
 import React from 'react';
 import axios from 'axios';
-import Movie from './Movie';
+import Movie from './Components/Movie';
+import LeftSidebar from './Components/LeftSidebar';
+import StickyHeader from './Components/StickyHeader';
+import "./App.css";
 
 
 
@@ -28,18 +31,28 @@ class App extends React.Component{
           </div>
           ) : 
           (
-          <div className="moives">
-            {moives.map(movie => (
-            <Movie
-              key={movie.id}
-              id={movie.id}
-              year={movie.year}
-              title={movie.title}
-              summary={movie.summary}
-              poster={movie.medium_cover_image}
-            />
-            ))}
-          </div>
+            <div className="main__view__container">
+              <div className="leftsidebar">
+                <LeftSidebar />
+              </div>
+              <div className="content__container">
+                <StickyHeader />
+                <div className="movies">
+                
+              {moives.map(movie => (
+                <Movie
+                  key={movie.id}
+                  id={movie.id}
+                  year={movie.year}
+                  title={movie.title}
+                  summary={movie.summary}
+                  poster={movie.medium_cover_image}
+                  genres={movie.genres}
+                />
+              ))}
+              </div>
+              </div>
+            </div>
           )
         }
       </section>

@@ -1,0 +1,41 @@
+body {
+  margin: 0px;
+  font-family: sans-serif;
+}
+
+.container {
+  position: absolute;
+  background: linear-gradient(
+    to bottom right,
+    rgb(193, 176, 209),
+    rgb(34, 199, 228)
+  );
+  z-index: -10;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.main__view__container {
+  width: 90%;
+  height: 96%;
+  background-color: rgb(235, 229, 229);
+  display: flex;
+  position: relative;
+}
+.content__container {
+  position: relative;
+  padding: 3% 5% 0px 5%;
+  overflow: hidden;
+}
+.movies {
+  overflow: auto;
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 30px;
+}
