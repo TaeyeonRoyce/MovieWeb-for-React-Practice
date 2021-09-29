@@ -18,6 +18,15 @@ body {
   justify-content: center;
 }
 
+.loader {
+  font-family: sans-serif;
+  position: relative;
+  top: 50%;
+  width: 40vw;
+  text-align: right;
+  font-size: 50px;
+}
+
 .main__view__container {
   width: 90%;
   height: 96%;
@@ -30,6 +39,11 @@ body {
   position: relative;
   padding: 3% 5% 0px 5%;
   overflow: hidden;
+  width: 100%;
+}
+.moives__container {
+  overflow: auto;
+  height: 100%;
 }
 .movies {
   overflow: auto;

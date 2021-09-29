@@ -4,13 +4,14 @@ import { AiOutlineEye } from "react-icons/ai";
 import { AiOutlineStock } from "react-icons/ai";
 import { BiMovie } from "react-icons/bi";
 import { BiBell } from "react-icons/bi";
+import profileImage from "./UserProfileImage.png";
 
 function LeftSidebar(){
     return (
         <div className="sidebar__container">
             <section className="profile__Box">
                 <h3 className="logo__text">Watch Moives</h3>
-                <img src="img/UserProfileImage.png" alt="" className="profile__circle__image" />
+                <img src={profileImage} alt="" className="profile__circle__image" />
                 <h6 className="profile__name">TaeYeon Royce</h6>
             </section>
             <section className="sidebar__firstSection">

@@ -10,6 +10,8 @@
   flex-direction: column;
   background-color: white;
   height: 100%;
+  border-top-left-radius: 10px;
+  overflow-y: hidden;
 }
 .profile__Box {
   display: flex;
