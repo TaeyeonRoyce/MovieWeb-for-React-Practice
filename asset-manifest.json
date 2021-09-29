@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/NomadCoder_MovieWebService_Clone/static/css/main.f9af2f86.chunk.css",
+    "main.js": "/NomadCoder_MovieWebService_Clone/static/js/main.7556bfe6.chunk.js",
+    "main.js.map": "/NomadCoder_MovieWebService_Clone/static/js/main.7556bfe6.chunk.js.map",
+    "runtime-main.js": "/NomadCoder_MovieWebService_Clone/static/js/runtime-main.b906652d.js",
+    "runtime-main.js.map": "/NomadCoder_MovieWebService_Clone/static/js/runtime-main.b906652d.js.map",
+    "static/js/2.66a02421.chunk.js": "/NomadCoder_MovieWebService_Clone/static/js/2.66a02421.chunk.js",
+    "static/js/2.66a02421.chunk.js.map": "/NomadCoder_MovieWebService_Clone/static/js/2.66a02421.chunk.js.map",
+    "index.html": "/NomadCoder_MovieWebService_Clone/index.html",
+    "static/css/main.f9af2f86.chunk.css.map": "/NomadCoder_MovieWebService_Clone/static/css/main.f9af2f86.chunk.css.map",
+    "static/js/2.66a02421.chunk.js.LICENSE.txt": "/NomadCoder_MovieWebService_Clone/static/js/2.66a02421.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b906652d.js",
+    "static/js/2.66a02421.chunk.js",
+    "static/css/main.f9af2f86.chunk.css",
+    "static/js/main.7556bfe6.chunk.js"
+  ]
+}
