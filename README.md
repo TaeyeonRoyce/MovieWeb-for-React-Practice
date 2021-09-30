@@ -4,4 +4,4 @@ React JS Fundamentals Course
 
 ## Click this!
 
-"https://TaeyeonRoyce.github.io/MovieWeb-for-React-Practice/"
+https://taeyeonroyce.github.io/MovieWeb-for-React-Practice/#/
