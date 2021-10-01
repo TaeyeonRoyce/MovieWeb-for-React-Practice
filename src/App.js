@@ -1,6 +1,6 @@
 import React from 'react';
-import Home from './Routes/Home';
-import MovieDetail from './Routes/MovieDetail';
+import Homepage from './Routes/Homepage';
+import MovieDetailPage from './Routes/MovieDetailPage';
 import { HashRouter, Route } from 'react-router-dom';
 
 
@@ -8,8 +8,8 @@ class App extends React.Component{
   render(){
     return(
       <HashRouter>
-        <Route path="/" exact={true} component={Home}/>
-        <Route path="/movie/:id" component={MovieDetail}/>
+        <Route path="/" exact={true} component={Homepage}/>
+        <Route path="/movie/:id" component={MovieDetailPage}/>
       </HashRouter>
     )
   }

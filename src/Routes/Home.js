@@ -24,36 +24,29 @@ class Home extends React.Component{
   render(){
     const { isLoading, moives } = this.state;
     return(
-      <section className="container">
-        <div className="main__view__container">
-            <div className="leftsidebar">
-                <LeftSidebar />
-            </div>
-            <div className="content__container">
-                {isLoading ? (
-                    <Loading />
-                ) : (
-                    <div className="moives__container"> 
-                        <StickyHeader />
-                        <div className="movies">
-                        {moives.map(movie => (
-                            <Movie
-                            key={movie.id}
-                            id={movie.id}
-                            year={movie.year}
-                            title={movie.title}
-                            summary={movie.summary}
-                            poster={movie.medium_cover_image}
-                            genres={movie.genres}
-                            />
-                        ))}
-                    </div>
-                    </div>
-                    )
-                }
-            </div>
-        </div>
-      </section>
+      <div className="content__container">
+          {isLoading ? (
+              <Loading />
+          ) : (
+              <div className="moives__container"> 
+                  <StickyHeader />
+                  <div className="movies">
+                  {moives.map(movie => (
+                      <Movie
+                      key={movie.id}
+                      id={movie.id}
+                      year={movie.year}
+                      title={movie.title}
+                      summary={movie.summary}
+                      poster={movie.medium_cover_image}
+                      genres={movie.genres}
+                      />
+                  ))}
+              </div>
+              </div>
+              )
+          }
+      </div>
     )
   }
 }
