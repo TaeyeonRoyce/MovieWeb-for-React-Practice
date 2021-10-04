@@ -22,6 +22,7 @@ select {
   justify-content: space-between;
   height: 30px;
   margin-bottom: 5px;
+  min-width: 300px;
 }
 .search__dummy {
   border-bottom: 3px solid rgb(187, 182, 182);
@@ -37,4 +38,23 @@ select {
 
 .search {
   font-size: 16px;
+}
+
+@media screen and (max-width: 780px) {
+  .search__icon {
+    font-size: 14px;
+    margin-right: 4px;
+  }
+
+  .search {
+    font-size: 12px;
+  }
+
+  .search__dummy {
+    border-width: 2px;
+    padding-bottom: 2px;
+  }
+  select {
+    font-size: 12px;
+  }
 }

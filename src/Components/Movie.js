@@ -15,7 +15,7 @@ function Movie({id, year, title, summary, poster, genres}){
                 poster,
                 genres
             }
-        }}>
+        }} className="moive__detail__link">
             <div className="movie">
                 <img src={poster} alt={title} title={title} className="movie__image"/>
                 <div className="movie__data">

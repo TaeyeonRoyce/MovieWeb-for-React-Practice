@@ -4,6 +4,56 @@
   box-sizing: border-box;
 }
 
+.small__sidebar__container {
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: 100%;
+  border-top-left-radius: 10px;
+  overflow-y: auto;
+}
+
+.small__profile__Box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: grey;
+}
+
+.small__profile__circle__image {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin-top: 10px;
+  box-shadow: 0px 10px 7px rgb(196, 191, 191);
+}
+
+.small__sidebar__firstSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+}
+.small__sidebar__context {
+  width: 100%;
+  height: 30px;
+  align-items: center;
+  margin-bottom: 20px;
+  color: grey;
+  cursor: pointer;
+  text-align: center;
+}
+
+.small__sidebar__icon {
+  width: 26px;
+  height: 26px;
+}
+.small__sidebar__clicked {
+  color: black;
+  border-left: 3px solid rgb(92, 187, 211);
+}
+
 .sidebar__container {
   min-width: 200px;
   display: flex;
@@ -11,8 +61,9 @@
   background-color: white;
   height: 100%;
   border-top-left-radius: 10px;
-  overflow-y: hidden;
+  overflow-y: auto;
 }
+
 .profile__Box {
   display: flex;
   align-items: center;
@@ -20,6 +71,7 @@
   color: grey;
   padding: 30px 20px 0px 20px;
 }
+
 .profile__circle__image {
   width: 50%;
   height: 50%;
