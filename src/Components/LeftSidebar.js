@@ -1,15 +1,17 @@
 import React from 'react';
 import "./LeftSidebar.css"
 import { useMediaQuery } from 'react-responsive'
+import { useState } from 'react';
 
 import { AiOutlineEye } from "react-icons/ai";
-import { AiOutlineStock } from "react-icons/ai";
-import { BiMovie } from "react-icons/bi";
+import { AiOutlineHeart } from "react-icons/ai";
 import { BiBell } from "react-icons/bi";
+import { BiArchive } from "react-icons/bi";
 import profileImage from "./UserProfileImage.png";
+import { Link } from 'react-router-dom';
 
-function LeftSidebar(){
-    const isSmallLeftSidebar = useMediaQuery({ maxWidth: 780 })
+function LeftSidebar(props){
+    const isSmallLeftSidebar = useMediaQuery({ maxWidth: 780 });
     if (isSmallLeftSidebar){
         return (
             <div className="small__sidebar__container">
@@ -17,10 +19,18 @@ function LeftSidebar(){
                     <img src={profileImage} alt="" className="small__profile__circle__image" />
                 </section>
                 <section className="small__sidebar__firstSection">
-                    <div className="small__sidebar__context small__sidebar__clicked"><AiOutlineEye className="small__sidebar__icon "/></div>
-                    <div className="small__sidebar__context"><AiOutlineStock className="small__sidebar__icon"/></div>
-                    <div className="small__sidebar__context"><BiMovie className="small__sidebar__icon"/></div>
-                    <div className="small__sidebar__context"><BiBell className="small__sidebar__icon"/></div>
+                    <Link to="/">
+                        <div className={"small__sidebar__context "+(props.currentPage === "home" ? "small__sidebar__clicked" : null)}><AiOutlineEye className="small__sidebar__icon"/></div>
+                    </Link>
+                    <Link to="/library">
+                        <div className={"small__sidebar__context "+(props.currentPage === "library" ? "small__sidebar__clicked" : null)}><BiArchive className="small__sidebar__icon"/></div>
+                    </Link>
+                    <Link to="/like">
+                        <div className={"small__sidebar__context "+(props.currentPage === "liked" ? "small__sidebar__clicked" : null)}><AiOutlineHeart className="small__sidebar__icon"/></div>
+                    </Link>
+                    <Link to="/activity">
+                        <div className={"small__sidebar__context "+(props.currentPage === "activity" ? "small__sidebar__clicked" : null)}><BiBell className="small__sidebar__icon"/></div>
+                    </Link>
                 </section>
             </div>
         )
@@ -34,10 +44,18 @@ function LeftSidebar(){
                 </section>
                 <section className="sidebar__firstSection">
                     <div className="menu">Menu</div>
-                    <div className="sidebar__context sidebar__clicked"><AiOutlineEye className="sidebar__icon"/>Discover</div>
-                    <div className="sidebar__context"><AiOutlineStock className="sidebar__icon"/>Trending</div>
-                    <div className="sidebar__context"><BiMovie className="sidebar__icon"/>New Releases</div>
-                    <div className="sidebar__context"><BiBell className="sidebar__icon"/>Activity<span className="activity__counts">9</span></div>
+                    <Link to="/">
+                        <div className={"sidebar__context "+(props.currentPage === "home" ? "sidebar__clicked" : null)}><AiOutlineEye className="sidebar__icon"/>Discover</div>
+                    </Link>
+                    <Link to="/library">
+                        <div className={"sidebar__context "+(props.currentPage === "library" ? "sidebar__clicked" : null)}><BiArchive className="sidebar__icon"/>My Library</div>
+                    </Link>
+                    <Link to="/like">
+                        <div className={"sidebar__context "+(props.currentPage === "liked" ? "sidebar__clicked" : null)}><AiOutlineHeart className="sidebar__icon"/>Liked</div>
+                    </Link>
+                    <Link to="/activity">
+                        <div className={"sidebar__context "+(props.currentPage === "activity" ? "sidebar__clicked" : null)}><BiBell className="sidebar__icon"/>Activity<span className="activity__counts">9</span></div>
+                    </Link>
                 </section>
             </div>
         )

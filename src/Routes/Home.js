@@ -1,7 +1,6 @@
 import React from 'react';
 import axios from 'axios';
 import Movie from '../Components/Movie';
-import LeftSidebar from '../Components/LeftSidebar';
 import StickyHeader from '../Components/StickyHeader';
 import Loading from '../Components/Loading';
 import "./Home.css";

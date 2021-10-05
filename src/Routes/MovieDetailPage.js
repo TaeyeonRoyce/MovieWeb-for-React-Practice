@@ -13,7 +13,7 @@ class MovieDetailPage extends React.Component{
         const { location } = this.props;
         if(location.state){
             return(
-                <MainFrame views={<MovieDetail movieData={location.state}/>} />
+                <MainFrame views={<MovieDetail movieData={location.state}/>} currentPage={'home'}/>
             )
         }else{
             return null

@@ -4,7 +4,7 @@ import Home from './Home';
 
 function Homepage(){
     return(
-        <MainFrame views={<Home />} />
+        <MainFrame views={<Home />} currentPage={'home'}/>
     )
 };
 

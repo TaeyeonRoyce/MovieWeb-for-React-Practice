@@ -6,7 +6,7 @@ function MainFrame(props){
         <section className="container">
         <div className="main__view__container">
             <div className="leftsidebar">
-                <LeftSidebar />
+                <LeftSidebar currentPage={props.currentPage} />
             </div>
             {props.views}
         </div>

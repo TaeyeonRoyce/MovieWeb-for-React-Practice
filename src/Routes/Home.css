@@ -13,7 +13,7 @@ body {
   width: 100vw;
   height: 100vh;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
   overflow: auto;
 }
@@ -29,12 +29,12 @@ body {
 
 .main__view__container {
   width: 90%;
-  height: 96%;
+  height: 90%;
+  min-height: 500px;
   background-color: rgb(235, 229, 229);
   display: flex;
   position: relative;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
+  border-radius: 10px;
 }
 .content__container {
   position: relative;

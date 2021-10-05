@@ -13,17 +13,20 @@ function MovieDetail({movieData}){
                 </Link>
             </div>
             <div className="movie__detail__container">
-                <img src={poster} alt={title} title={title} className="movie__detail__image"/>
-                <div className="movie__detail__data">
+                <div className="movie__detail">
                     <h3 className="movie__detail__title">{title}</h3>
-                    <h5 className="movie__detail__year">{year}</h5>
-                    <div className="detail__genres__container">
-                        {genres.map((genre, index) => (
-                        <li key={index} className="detail__genres__genre">{genre}</li>
-                    ))}
+                    <div className="movie__detail__data">
+                        <img src={poster} alt={title} title={title} className="movie__detail__image"/>
+                        <div className="movie__detail__textdata">
+                            <div className="detail__genres__container">
+                                {genres.map((genre, index) => (
+                                <li key={index} className="detail__genres__genre">{genre}</li>
+                            ))}
+                            </div>
+                            <h5 className="movie__detail__year">{year}</h5>
+                            <div className="movie__detail__summary">{summary}</div>
+                        </div>
                     </div>
-                    <p className="movie__detail__summary">{summary}</p>
-                    
                 </div>
             </div>
         </div>
