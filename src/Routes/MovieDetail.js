@@ -4,7 +4,7 @@ import { BiChevronLeftCircle } from 'react-icons/bi';
 import './MovieDetail.css';
 
 function MovieDetail({movieData}){
-    const { year, title, poster, summary, genres } = movieData;
+    const { year, title, poster, summary, genres, rating } = movieData;
     return(
         <div className="content__container">
             <div className="stickyHeader__container">
@@ -24,6 +24,7 @@ function MovieDetail({movieData}){
                             ))}
                             </div>
                             <h5 className="movie__detail__year">{year}</h5>
+                            <h5 className="movie__detail__rating">⭐️{rating} / 10</h5>
                             <div className="movie__detail__summary">{summary}</div>
                         </div>
                     </div>

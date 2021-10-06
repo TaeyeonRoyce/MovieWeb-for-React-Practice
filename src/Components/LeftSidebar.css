@@ -108,6 +108,11 @@ a {
   padding-left: 26px;
   cursor: pointer;
 }
+.sidebar__context:hover {
+  color: black;
+  border-left: 3px solid rgb(92, 187, 211);
+}
+
 .sidebar__clicked {
   color: black;
   border-left: 3px solid rgb(92, 187, 211);

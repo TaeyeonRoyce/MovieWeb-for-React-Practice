@@ -1,7 +1,6 @@
 import React from 'react';
 import "./LeftSidebar.css"
 import { useMediaQuery } from 'react-responsive'
-import { useState } from 'react';
 
 import { AiOutlineEye } from "react-icons/ai";
 import { AiOutlineHeart } from "react-icons/ai";

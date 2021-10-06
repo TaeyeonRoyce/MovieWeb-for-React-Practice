@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import "./Movie.css";
 
 
-function Movie({id, year, title, summary, poster, genres}){
+function Movie({id, year, title, summary, poster, genres, rating}){
     return (
         <Link to={{
             pathname : `/movie/${id}`,
@@ -13,7 +13,8 @@ function Movie({id, year, title, summary, poster, genres}){
                 title,
                 summary,
                 poster,
-                genres
+                genres,
+                rating
             }
         }} className="moive__detail__link">
             <div className="movie">
@@ -21,6 +22,7 @@ function Movie({id, year, title, summary, poster, genres}){
                 <div className="movie__data">
                     <h3 className="movie__title">{title}</h3>
                     <h5 className="movie__year">{year}</h5>
+                    <h5 className="movie__rating">⭐️{rating} / 10</h5>
                     <div className="genres__container">
                         {genres.map((genre, index) => (
                         <li key={index} className="genres__genre">{genre}</li>
