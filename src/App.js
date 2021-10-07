@@ -5,6 +5,7 @@ import { HashRouter, Route } from 'react-router-dom';
 import LikedPage from './Routes/LikedPage';
 import MyLibraryPage from './Routes/MyLibraryPage';
 import ActivityPage from './Routes/ActivityPage';
+import ProfilePage from './Routes/ProfilePage';
 
 
 class App extends React.Component{
@@ -12,6 +13,7 @@ class App extends React.Component{
     return(
       <HashRouter>
         <Route path="/" exact={true} component={Homepage}/>
+        <Route path="/profile" component={ProfilePage}/>
         <Route path="/library/" component={MyLibraryPage}/>
         <Route path="/like/" component={LikedPage}/>
         <Route path="/activity" component={ActivityPage}/>

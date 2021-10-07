@@ -1,0 +1,22 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.profile__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.profile__info__container {
+  width: 100%;
+  display: flex;
+  height: 244px;
+}
+.profile__context__divider {
+  height: 3px;
+  background-color: rgb(193, 176, 209);
+  width: 106%;
+  position: relative;
+  left: -10%;
+}

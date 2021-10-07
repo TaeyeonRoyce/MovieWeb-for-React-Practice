@@ -15,8 +15,9 @@ function LeftSidebar(props){
         return (
             <div className="small__sidebar__container">
                 <section className="small__profile__Box">
-                    <img src={profileImage} alt="" className="small__profile__circle__image" />
+                    <Link to="/profile"><img src={profileImage} alt="" className="small__profile__circle__image" /></Link>
                 </section>
+                <div className="small__sidebar__divider"></div>
                 <section className="small__sidebar__firstSection">
                     <Link to="/">
                         <div className={"small__sidebar__context "+(props.currentPage === "home" ? "small__sidebar__clicked" : null)}><AiOutlineEye className="small__sidebar__icon"/></div>
@@ -38,9 +39,12 @@ function LeftSidebar(props){
             <div className="sidebar__container">
                 <section className="profile__Box">
                     <h3 className="logo__text">Watch Moives</h3>
-                    <img src={profileImage} alt="" className="profile__circle__image" />
+                    <Link to="/profile" className="profile__circle__image__link">
+                        <img src={profileImage} alt="" className="profile__circle__image" />
+                    </Link>
                     <h6 className="profile__name">TaeYeon Royce</h6>
                 </section>
+                <div className="sidebar__divider"></div>
                 <section className="sidebar__firstSection">
                     <div className="menu">Menu</div>
                     <Link to="/">

@@ -23,6 +23,7 @@ a {
   align-items: center;
   flex-direction: column;
   color: grey;
+  margin-bottom: 10px;
 }
 
 .small__profile__circle__image {
@@ -33,11 +34,18 @@ a {
   box-shadow: 0px 10px 7px rgb(196, 191, 191);
 }
 
+.small__sidebar__divider {
+  height: 3px;
+  background-color: rgb(193, 176, 209);
+  width: 60%;
+  margin-left: 20%;
+}
+
 .small__sidebar__firstSection {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 80px;
+  margin-top: 50px;
 }
 .small__sidebar__context {
   width: 100%;
@@ -75,11 +83,24 @@ a {
   flex-direction: column;
   color: grey;
   padding: 30px 20px 0px 20px;
+  padding-bottom: 20px;
+}
+
+.profile__Box a {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  text-align: center;
+}
+
+.sidebar__divider {
+  height: 3px;
+  background-color: rgb(193, 176, 209);
+  width: 80%;
+  margin-left: 10%;
 }
 
 .profile__circle__image {
-  width: 50%;
-  height: 50%;
   border-radius: 50%;
   margin-top: 30px;
   box-shadow: 0px 10px 7px rgb(196, 191, 191);

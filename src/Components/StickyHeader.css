@@ -39,6 +39,10 @@ select {
 .search {
   font-size: 16px;
 }
+.sort__by {
+  color: grey;
+  font-size: 14px;
+}
 
 @media screen and (max-width: 780px) {
   .search__icon {
