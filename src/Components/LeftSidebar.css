@@ -85,12 +85,17 @@ a {
   padding: 30px 20px 0px 20px;
   padding-bottom: 20px;
 }
-
+.logo__text {
+  font-size: 22px;
+}
 .profile__Box a {
   width: 100%;
   height: 100%;
   align-items: center;
   text-align: center;
+}
+.profile__name {
+  font-size: 16px;
 }
 
 .sidebar__divider {
@@ -102,7 +107,7 @@ a {
 
 .profile__circle__image {
   border-radius: 50%;
-  margin-top: 30px;
+  margin-top: 26px;
   box-shadow: 0px 10px 7px rgb(196, 191, 191);
   margin-bottom: 15px;
 }
@@ -113,8 +118,8 @@ a {
 }
 .sidebar__firstSection .menu {
   color: grey;
-  font-size: 12px;
-  margin-top: 40px;
+  font-size: 18px;
+  margin-top: 34px;
   margin-bottom: 10px;
   padding-left: 30px;
 }
@@ -122,7 +127,7 @@ a {
   display: flex;
   align-items: center;
   min-height: 30px;
-  font-size: 14px;
+  font-size: 16px;
   color: grey;
   margin-top: 10px;
   margin-bottom: 10px;

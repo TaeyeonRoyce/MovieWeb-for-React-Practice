@@ -1,15 +1,20 @@
 import React from 'react';
+import { useMediaQuery } from 'react-responsive';
+import SmallProfilePage from '../Components/SmallProfilePage'
+import NormalProfilePage from '../Components/NormalProfilePage'
 import './Profile.css';
 
 function Profile(){
-    return(
-        <div className="profile__container">
-            <div className="profile__info__container">
-
-            </div>
-            <div className="profile__context__divider"></div>
-            <h1>This is My Profile Page</h1>
-        </div>
-    )
+    const isSmallProfilePage = useMediaQuery({ maxWidth: 780 });
+    if (isSmallProfilePage){
+        return(
+            <SmallProfilePage />
+        )
+    }else{
+        return(
+            <NormalProfilePage />
+        )
+    }
+    
 }
 export default Profile;

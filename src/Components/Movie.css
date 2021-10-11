@@ -39,7 +39,7 @@
 }
 
 .movie__title {
-  font-size: 16px;
+  font-size: 20px;
   margin-top: 8px;
   color: black;
   white-space: nowrap;
@@ -47,12 +47,12 @@
   overflow-x: hidden;
 }
 .movie__year {
-  font-size: 12px;
+  font-size: 16px;
   margin-top: 4px;
   color: grey;
 }
 .movie__rating {
-  font-size: 13px;
+  font-size: 15px;
   margin-bottom: 4px;
   color: rgb(68, 58, 58);
 }
@@ -76,14 +76,14 @@
   border-radius: 16px;
   color: rgba(18, 26, 17, 0.596);
   margin-right: 5px;
-  font-size: 11px;
+  font-size: 13px;
   display: inline-block;
   padding: 3px;
   white-space: nowrap;
 }
 
 .movie__summary {
-  font-size: 12px;
+  font-size: 14px;
   padding-bottom: 8px;
   color: rgb(88, 84, 84);
   height: 100px;

@@ -5,7 +5,7 @@ import {useState} from 'react';
 
 function StickyHeader(props){
 
-    const [selected, setSelected] = useState("star");
+    const [selected, setSelected] = useState('star');
 
     const handleSelect = (e) => {
         setSelected(e.target.value);
